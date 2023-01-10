@@ -10,7 +10,7 @@
   <meta name="description" content="In this blog post, I will detail my repository that performs object classification with transfer learning.  This blog post is inspired by a Medium post that made use of Tensorflow.  The code is written in Keras (version 2.0.2) and Python 3.5.
 
 ">
-  <meta name="author" content="Alexis Cook">
+  <meta name="author" content="Shakwana Albert">
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -23,7 +23,7 @@
 
 ">
   
-  <meta name="twitter:creator" content="alexis_b_cook">
+  <meta name="twitter:creator" content="gotkwana">
   
   <meta name="twitter:image" content="/images/favicons/favicon-194x194.png" />
 
@@ -56,7 +56,7 @@
   
   <link rel="stylesheet" href="/css/main.css?1513320667569926000">
   <link rel="canonical" href="http://localhost:4000/2017/using-transfer-learning-to-classify-images-with-keras/">
-  <link rel="alternate" type="application/rss+xml" title="Alexis Cook" href="/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="Shakwana Albert" href="/feed.xml">
 </head>
 
 
@@ -71,19 +71,19 @@
 
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
-        <a href="/" title="link to home of Alexis Cook">
+        <a href="/" title="link to home of Shakwana Albert">
           <img src="/images/profile.jpg" class="user-image" alt="My Profile Photo">
-          <h1 class="panel-cover__title panel-title">Alexis Cook</h1>
+          <h1 class="panel-cover__title panel-title">Shakwana Albert</h1>
         </a>
         <hr class="panel-cover__divider">
-        <p class="panel-cover__description">Deep Learning Professional</p>
+        <p class="panel-cover__description">Creative Leader, Passionate Learner</p>
         <hr class="panel-cover__divider panel-cover__divider--secondary">
 
         <div class="navigation-wrapper">
 
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
-              <li class="navigation__item"><a href="/#blog" title="link to Alexis Cook blog" class="blog-button">Blog</a></li>
+              <li class="navigation__item"><a href="/#blog" title="link to Shakwana Albert blog" class="blog-button">Blog</a></li>
             </ul>
           </nav>
 
@@ -93,7 +93,7 @@
             
               <!-- Twitter -->
               <li class="navigation__item">
-                <a href="http://twitter.com/alexis_b_cook" title="@alexis_b_cook on Twitter" target="_blank">
+                <a href="http://twitter.com/gotkwana" title="@gotkwana on Twitter" target="_blank">
                   <i class="icon icon-social-twitter"></i>
                   <span class="label">Twitter</span>
                 </a>
@@ -123,7 +123,7 @@
             
               <!-- GitHub -->
               <li class="navigation__item">
-                <a href="https://www.github.com/alexisbcook" title="alexisbcook on GitHub" target="_blank">
+                <a href="https://www.github.com/vitothebone" title="vitothebone on GitHub" target="_blank">
                   <i class="icon icon-social-github"></i>
                   <span class="label">GitHub</span>
                 </a>
@@ -133,7 +133,7 @@
             
               <!-- Email -->
               <li class="navigation__item">
-                <a href="mailto:alexis.cook@gmail.com" title="Email alexis.cook@gmail.com" target="_blank">
+                <a href="mailto:shakwana.albert@outlook.com" title="Email shakwana.albert@outlook.com" target="_blank">
                   <i class="icon icon-mail"></i>
                   <span class="label">Email</span>
                 </a>
@@ -176,7 +176,7 @@
   </header>
 
   <section class="post">
-    <p>In this blog post, I will detail my <a href="https://github.com/alexisbcook/keras_transfer_cifar10">repository</a> that performs object classification with transfer learning.  This blog post is inspired by a <a href="https://medium.com/@st553/using-transfer-learning-to-classify-images-with-tensorflow-b0f3142b9366">Medium post</a> that made use of Tensorflow.  The code is written in Keras (version 2.0.2) and Python 3.5.</p>
+    <p>In this blog post, I will detail my <a href="https://github.com/vitothebone/keras_transfer_cifar10">repository</a> that performs object classification with transfer learning.  This blog post is inspired by a <a href="https://medium.com/@st553/using-transfer-learning-to-classify-images-with-tensorflow-b0f3142b9366">Medium post</a> that made use of Tensorflow.  The code is written in Keras (version 2.0.2) and Python 3.5.</p>
 
 <p>If you need to learn more about CNNs, I recommend reading the notes for the <a href="http://cs231n.github.io/convolutional-networks/">CS231n</a> course at Stanford.  All lectures are also available <a href="https://www.youtube.com/watch?v=LxfUGhug-iQ&amp;list=PLkt2uSq6rBVctENoVBg1TpCC7OQi31AlC&amp;index=7">online</a>.  You are also encouraged to check out Term 2 of Udacity’s <a href="https://www.udacity.com/course/artificial-intelligence-nanodegree--nd889">Artificial Intelligence Nanodegree</a>, where you can find a comprehensive introduction to neural networks (NNs), CNNs (including transfer learning), and recurrent neural networks (RNNs).</p>
 
@@ -217,7 +217,7 @@
 
 <h4 id="using-t-sne-to-visualize-bottleneck-features">Using t-SNE to Visualize Bottleneck Features</h4>
 
-<p>Towards visualizing the bottleneck features, I used a dimensionality reduction technique called <a href="http://distill.pub/2016/misread-tsne/">t-SNE</a> (aka t-Distributed Stochastic Neighbor Embedding).  t-SNE reduces the dimensionality of each point, in a way where the points in the lower-dimensional space preserve the pointwise distances from the original, higher-dimensional space.  Scikit-learn <a href="http://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html">has an implementation</a> of t-SNE, but it does not scale well to large datasets.  Instead, I worked with an implementation that can be found <a href="https://github.com/alexisbcook/tsne">on github</a>; it can be installed by running <code class="highlighter-rouge">pip install git+https://github.com/alexisbcook/tsne.git</code> in the terminal.</p>
+<p>Towards visualizing the bottleneck features, I used a dimensionality reduction technique called <a href="http://distill.pub/2016/misread-tsne/">t-SNE</a> (aka t-Distributed Stochastic Neighbor Embedding).  t-SNE reduces the dimensionality of each point, in a way where the points in the lower-dimensional space preserve the pointwise distances from the original, higher-dimensional space.  Scikit-learn <a href="http://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html">has an implementation</a> of t-SNE, but it does not scale well to large datasets.  Instead, I worked with an implementation that can be found <a href="https://github.com/vitothebone/tsne">on github</a>; it can be installed by running <code class="highlighter-rouge">pip install git+https://github.com/vitothebone/tsne.git</code> in the terminal.</p>
 
 <p>Visualizing the resulting 2-dimensional points yields the plot below, where points are color-coded according to the object class contained in the corresponding image.</p>
 
@@ -231,7 +231,7 @@
 
 <h4 id="play-with-the-code">Play with the Code!</h4>
 
-<p>Can you do better with other architectures?  Feel free to download the <a href="https://github.com/alexisbcook/keras_transfer_cifar10">repository</a> on GitHub and try your own hand at transfer learning!</p>
+<p>Can you do better with other architectures?  Feel free to download the <a href="https://github.com/vitothebone/keras_transfer_cifar10">repository</a> on GitHub and try your own hand at transfer learning!</p>
 
   </section>
   <section id="disqus_thread"></section><!-- /#disqus_thread -->
@@ -258,7 +258,7 @@
       </div>
 
       <footer class="footer">
-  <span class="footer__copyright">&copy; 2017 Alexis Cook. All rights reserved.</span>
+  <span class="footer__copyright">&copy; 2022 Shakwana Albert. All rights reserved.</span>
 </footer>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

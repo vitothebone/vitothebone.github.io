@@ -1,17 +1,17 @@
 # Site settings
-title: Alexis Cook
-description: 'Deep Learning Professional'
-url: 'https://alexisbcook.github.io'
+title: Shakwana Albert
+description: 'Creative Leader, Passionate Learner'
+url: 'https://vitothebone.github.io'
 baseurl: ''
 google_analytics: 'UA-83225772-1'
-disqus_shortname: 'alexisbcook-github-io'
+disqus_shortname: 'vitothebone-github-io'
 
 author:
-  name: 'Alexis Cook'
-  email: alexis.cook@gmail.com
+  name: 'Shakwana Albert'
+  email: shakwana.albert@outlook.com
   twitter_username: alexis_b_cook
-  facebook_username: alexis.cook
-  github_username:  alexisbcook
+  facebook_username: Kwana Albert
+  github_username:  vitothebone
   linkedin_username:  alexis-cook-a6127753
 
 defaults:
